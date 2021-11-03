@@ -5,11 +5,20 @@
     <parent>
         <artifactId>doraemon</artifactId>
         <groupId>com.zeyuan.template</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${reversion}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>doraemon-service</artifactId>
+    <artifactId>doraemon-server</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.zeyuan.template</groupId>
+            <artifactId>doraemon-integration</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zeyuan.template</groupId>
+            <artifactId>doraemon-dao</artifactId>
+        </dependency>
+    </dependencies>
 </project>
